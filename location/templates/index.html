@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% load static %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+<h1>Safe Place</h1>
+  <p>Welcome to <em>Safe Place - Good times to visit DC's best restaurants</em>.</p>
+
+  <hr/>
+
+    <img src="{%static 'css/images/silhouette-3257100__340.png' %}" alt="restaurant" />
+
+  <hr/>
+
+<h3><em>Number of Locations: {{ num_locations }} </em></h3>
+
+{% endblock %}
